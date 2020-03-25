@@ -1,0 +1,31 @@
+<mat-toolbar>
+  <div class="flexContainer">
+    <div class="navCol0">
+      <a class="navbar-brand">GlobalLogic</a>
+    </div>
+    <div class="navCol1">
+      <mat-form-field class="fullWidthForm">
+        <input type="text"
+               placeholder="Search for almost anything."
+               aria-label="Number"
+               matInput
+               [formControl]="myControl"
+               [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option class="customOptionCss" *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <button mat-raised-button routerLink=".">Search</button>
+    </div>
+    <div class="navCol2">
+      <mat-icon>home</mat-icon>
+      <mat-icon class="searchIcon">search</mat-icon>
+      <mat-icon>notification_important</mat-icon>
+      <mat-icon>shopping_cart</mat-icon>
+      <mat-icon (click)="openLoginDialog()">power_settings_new</mat-icon>
+    </div>
+  </div>
+</mat-toolbar>
+
