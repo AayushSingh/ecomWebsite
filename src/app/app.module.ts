@@ -17,6 +17,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import {MatInputModule} from '@angular/material/input';
     MatFormFieldModule,
     MatAutocompleteModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule, MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

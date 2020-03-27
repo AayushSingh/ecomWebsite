@@ -1,0 +1,36 @@
+.loginParent{
+  min-width: 600px;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.loginParent input{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body [class^='mat-'], body [class*=' mat-'] {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.mat-form-field{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.fullWidthForm{
+  width: 100%;
+  padding: 10px 25px 15px;
+}
+
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  padding: 10px 0 0;
+}
+
+.loginButton{
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  font-weight: 500;
+  margin: 25px 0 0;
+}

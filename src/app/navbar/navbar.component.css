@@ -35,18 +35,12 @@
   padding: 0 1% 0 0;
 }
 
-.flexContainer {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  padding: 0 1%;
-}
-
 .navCol2 mat-icon {
   font-size: 28px;
   padding: 9px 18px;
   font-weight: bold;
   color: #a7a7a7;
+  cursor: pointer;
 
 }
 

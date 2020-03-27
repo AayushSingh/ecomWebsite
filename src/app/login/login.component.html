@@ -1,0 +1,29 @@
+<div class="container loginParent">
+
+  <h4>Login
+  </h4>
+  <form class="">
+    <mat-form-field class="fullWidthForm">
+      <mat-label>Email</mat-label>
+      <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+             placeholder="Ex. pat@example.com">
+      <mat-hint>Enter your email registered with us!</mat-hint>
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is required
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="fullWidthForm">
+      <mat-label>Password</mat-label>
+      <input matInput [formControl]="passwordFormControl"
+             placeholder="Your Password" type="password">
+      <mat-hint>Please do not share your password with anyone!</mat-hint>
+      <mat-error *ngIf="passwordFormControl.hasError('required')">
+        Password is required
+      </mat-error>
+    </mat-form-field>
+    <button [disabled]="passwordFormControl.hasError('required') || emailFormControl.hasError('required') || emailFormControl.hasError('email')" class="loginButton" mat-raised-button (click)="login()" >Login to Your Account</button>
+  </form>
+</div>

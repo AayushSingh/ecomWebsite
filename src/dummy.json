@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "name": "Aayush Singh",
+      "password": "12345",
+      "cart" : [],
+      "email": "aayush.singh@globallogic.com"
+    }
+  ]
+}
